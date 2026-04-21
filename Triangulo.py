@@ -1,4 +1,4 @@
-"""Codigo para calcular el area y perimetro de un triangulo"""
+"""Codigo para calcular el area y perimetro de cualquier tipo de triangulo"""
 
 def area_triangulo(base, altura): #solicita dos parametros base y altura
     """Funcion para calcular el area de un triangulo, recibe la base y la altura del triangulo y retorna el area calculada"""
