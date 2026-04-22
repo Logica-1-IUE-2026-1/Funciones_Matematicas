@@ -72,7 +72,7 @@ def main():
     area_rectangulo = rectangulo.area_rectangulo(lado1_rectangulo,lado2_rectangulo)
     perimetro_rectangulo = rectangulo.perimetro_rectangulo(lado1_rectangulo,lado2_rectangulo)
 
-    print(f"el area del rectangulo es: {area_rectangulo}\n")
+    print(f"el área del rectangulo es: {area_rectangulo}\n")
     print(f"el perimetro del rectangulo es: {perimetro_rectangulo}\n")
 
 
