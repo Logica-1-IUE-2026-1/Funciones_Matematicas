@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 """
     Esta es la función integradora que va a reunir todas las funciones 
     matematicas y las va a ejecutar pro medio de la función main
@@ -80,6 +81,55 @@ def main():
 
 
 
+=======
+"""Esta es la función principal que ejecuta varios algoritmos de matemáticas"""
+import circulo
+import cuadrado
+import rectangulo
+import trapecio
+import triangulo
+
+def main():
+    """"Menu principal para elegir que medir"""
+    print("Bienvenido a la calculadora matemática")
+    mediciones = input("¿Qué figura desea calcular?\
+     \n 1. Circulo \n 2. Cuadrado \n 3. Rectángulo \n 4. Trapeciio \n 5. Triángulo \n")
+    if mediciones == "1":
+        radio = int(input("Ingrese el radio del círculo: \n"))
+        area = circulo.area_circulo(radio)
+        perimetro = circulo.perimetro_circulo(radio)
+        print("El área del círculo es de", area,  \
+              "y el perímetro es de", perimetro)
+    elif mediciones == "2":
+        a = int(input("Ingrese el lado del cuadrado: \n "))
+        area = cuadrado.area_cuadrado(a)
+        perimetro = cuadrado.perimetro_cuadrado(a)
+        print("El área del cuadrado es de", area, \
+              "y el perímetro es de", perimetro)
+    elif mediciones == "3":
+        a =  int(input("Ingrese la base del rectángulo: "))
+        b = int(input("Ingrese la altura del rectángulo: "))
+        area = rectangulo.area_rectangulo(a, b)
+        perimetro = rectangulo.perimetro_rectangulo(a, b)
+        print("El área del rectángulo es de", area, "y el perímetro es de", perimetro)
+    elif mediciones == "4":
+        bg = int(input("Ingrese la base grande del trapecio: "))
+        bp = int(input("Ingrese la base pequeña del trapecio: "))
+        h = int(input("Ingrese la altura del trapecio: "))
+        area = trapecio.area(bg, bp, h)
+        perimetro = trapecio.perimetro(bg, bp, h, h)
+        print("El área del trapecio es de", area, "y el perímetro es de", perimetro)
+    elif mediciones == "5":
+        base = int(input("Ingrese la base del triángulo: "))
+        altura = int(input("Ingrese la altura del triángulo: "))
+        area = triangulo.area_triangulo(base, altura)
+        perimetro = triangulo.perimetro_triangulo(base, base, altura)
+        print("El área del triángulo es de", area, "y el perímetro es de", perimetro)
+    else:
+        print("❌ Opción no válida")
+    return 0
+
+>>>>>>> Stashed changes
 if __name__== "__main__":
     RESULT = main()
     if RESULT == 0:
